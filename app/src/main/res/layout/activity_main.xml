@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_centerInParent="true"
+        android:id="@+id/tv"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:layout_below="@+id/tv"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESET"
+            android:backgroundTint="#3F51B5"
+            android:id="@+id/reset"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="START"
+            android:backgroundTint="#247DA5"
+            android:id="@+id/start"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/stop"
+            android:backgroundTint="#DA1515"
+            android:text="STOP"
+            android:textColor="#EDE1E1"
+            android:enabled="false"
+            app:icon="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+
+</RelativeLayout>
